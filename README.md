@@ -1,1 +1,5 @@
-# jb73909.github.io
+title: My DevCat Studios Portfolio
+description: This is my portfolio showcasing my projects and skills.
+baseurl: "" # leave empty since this is your user page
+url: "https://johnburkett73909.github.io" # replace YOURUSERNAME with your GitHub username
+theme: Tactile
