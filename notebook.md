@@ -136,11 +136,8 @@ When to use: Compare values, track progress, or organize data neatly.
 # Example:
 
 | Task        | Status   | Notes          |
-
 |--------------|------------|-----------------| 
-
 | Homework 1  | Done #  | Submitted      |
-
 | Homework 2  | Pending  | Needs review   |
 
  
