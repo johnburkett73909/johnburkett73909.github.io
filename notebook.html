@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Style Guide for Coding Notebooks</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-light py-5">
+  <div class="container bg-white p-4 p-md-5 rounded shadow-sm" style="max-width: 850px;">
+
+    <h2 class="h2 fw-bold text-dark">Markdown Style Guide for Coding Notebooks</h2>
+    
+    <p class="mt-3">Follow this guide to keep your coding notebook <strong class="fw-bold">clear, consistent, and professional</strong>.</p>
+    
+    <p>This ensures your notes are easy for you (and others) to read later.</p>
+    
+    <hr class="my-4">
+    
+    <h2 class="h2 fw-bold text-dark">Headings</h2>
+    
+    <p><strong class="fw-bold">When to use:</strong> Organize your notebook into sections (like days, topics, or projects).</p>
+    
+    <ul class="list-unstyled">
+      <li class="mb-2"><code class="text-danger-emphasis bg-danger-subtle p-1 rounded">#</code> for the notebook title (use once at the top).</li>
+      <li class="mb-2"><code class="text-danger-emphasis bg-danger-subtle p-1 rounded">##</code> for each day or major topic.</li>
+      <li class="mb-2"><code class="text-danger-emphasis bg-danger-subtle p-1 rounded">###</code> for subsections (like "Notes", "Practice", "Reflections").</li>
+    </ul>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">My Coding Notebook</h1>
+    
+    <h2 class="h2 fw-bold text-dark my-3">Day 1</h2>
+    
+    <h3 class="h3 fw-bold text-dark my-2">Notes</h3>
+    
+    <h3 class="h3 fw-bold text-dark my-2">Practice</h3>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Text Formatting</h1>
+    
+    <p>When to use: Highlight important ideas or add emphasis.</p>
+    
+    <p>Use bold for key terms or definitions.</p>
+    
+    <p>Use italic for emphasis or side comments.</p>
+    
+    <p>Use inline code for keywords, functions, or commands.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <p><strong class="fw-bold">Class</strong> = a blueprint for objects</p>
+    
+    <p><em class="fst-italic">Remember:</em> always test your code</p>
+    
+    <p>Use <code class="text-danger-emphasis bg-danger-subtle p-1 rounded">System.out.println()</code> to print</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Code Blocks</h1>
+    
+    <p>When to use: Anytime you write multiple lines of code.</p>
+    
+    <p>Inline code for short snippets.</p>
+    
+    <p>Fenced code blocks with language for full examples.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <pre class="bg-dark text-light p-3 rounded"><code>public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}</code></pre>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Lists</h1>
+    
+    <p>When to use: Organize steps, notes, or key points.</p>
+    
+    <p>Numbered lists for sequences or steps.</p>
+    
+    <p>Bulleted lists for unordered ideas.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <ol class="list-group list-group-numbered border-0 mb-3">
+      <li class="list-group-item border-0 p-0 ps-1 bg-transparent">Define the class</li>
+      <li class="list-group-item border-0 p-0 ps-1 bg-transparent">Write the main method</li>
+      <li class="list-group-item border-0 p-0 ps-1 bg-transparent">Test your program</li>
+    </ol>
+    
+    <p class="mb-1">Variables</p>
+    
+    <ul class="list-unstyled mb-3">
+      <li>- Loops</li>
+      <li>- Conditionals</li>
+    </ul>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Checklists</h1>
+    
+    <p>When to use: Track progress on assignments or tasks.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" checked disabled id="check1">
+      <label class="form-check-label" for="check1">Complete coding warm-up</label>
+    </div>
+    
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" disabled id="check2">
+      <label class="form-check-label" for="check2">Finish project draft</label>
+    </div>
+    
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" disabled id="check3">
+      <label class="form-check-label" for="check3">Reflect on learning</label>
+    </div>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Blockquotes</h1>
+    
+    <p>When to use: Call out notes, reminders, or teacher comments.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <blockquote class="blockquote border-start border-4 ps-3">
+      <p>💡 Remember: Loops repeat code until a condition is false.</p>
+    </blockquote>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Tables</h1>
+    
+    <p>When to use: Compare values, track progress, or organize data neatly.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Status</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Homework 1</td>
+            <td>Done #</td>
+            <td>Submitted</td>
+          </tr>
+          <tr>
+            <td>Homework 2</td>
+            <td>Pending</td>
+            <td>Needs review</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Links &amp; Images</h1>
+    
+    <p>When to use: Add references, resources, or visuals.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <p><a href="https://oracle.com" class="link-primary">Java Docs</a></p>
+    
+    <p><img src="https://wikimedia.org" class="img-fluid rounded" alt="Markdown Logo"></p>
+    
+    <p>To make an image that is a link, paste the image, then add the following before it, replacing website address with the link:</p>
+    
+    <p>&lt;a href="website address"&gt;</p>
+    
+    <p>And after the image info, add: &lt;/a&gt;</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Collapsible Sections</h1>
+    
+    <p>When to use: Hide solutions, extended notes, or extra details.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <details>
+      <summary>Click to reveal solution</summary>
+      <p class="mt-2">System.out.println("Answer: 42");</p>
+    </details>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Footnotes</h1>
+    
+    <p>When to use: Add references or side notes without cluttering the page.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Example:</h1>
+    
+    <p>This concept is related to object-oriented programming.<sup><a href="#footnote-1" class="text-decoration-none small">[^1]</a></sup></p>
+    
+    <p id="footnote-1" class="text-muted small mt-3">[^1]: See "Objects and Classes" in your textbook.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Style Rules</h1>
+    
+    <p>Consistency matters more than creativity</p>
+    
+    <p>Always use headings to structure your notes.</p>
+    
+    <p>Always use code blocks for multi-line code.</p>
+    
+    <p>Clarity first</p>
+    
+    <p>Bold key terms.</p>
+    
+    <p>Use lists instead of long sentences when outlining steps.</p>
+    
+    <p>Professional tone</p>
+    
+    <p>Don't mix casual notes with formal work in the same section.</p>
+    
+    <p>Use blockquotes for reflections or teacher feedback.</p>
+    
+    <p>Track your learning</p>
+    
+    <p>Use checklists to mark what's done.</p>
+    
+    <p>Use collapsible sections if you want to hide answers until review time.</p>
+    
+    <h1 class="display-1 fw-bold text-dark my-4">Bottom Line:</h1>
+    
+    <p>Headings = Structure</p>
+    
+    <p>Bold/Italic = Emphasis</p>
+    
+    <p>Code blocks = Code</p>
+    
+    <p>Lists = Steps/Ideas</p>
+    
+    <p>Tables = Organization</p>
+    
+    <p>Checklists = Progress</p>
+    
+    <p>Blockquotes = Notes/Tips</p>
+    
+    <p>Collapsible = Hide/Show detail</p>
+    
+    <p>Keep it simple, consistent, and clear.</p>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
