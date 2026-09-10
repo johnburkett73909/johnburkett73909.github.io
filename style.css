@@ -7,3 +7,13 @@ h1, h2, h3, h4, h5, h6 {
 html {
   scroll-behavior: smooth;
 }
+
+.copy-code.copied {
+  background-color: #38a169; /* Green background */
+  color: #ffffff;            /* White icon color */
+  border-color: #38a169;
+}
+
+.code-block {
+  
+}

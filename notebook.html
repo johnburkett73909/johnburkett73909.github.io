@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Markdown Style Guide for Coding Notebooks</title>
   <!-- Bootstrap 5 CSS -->
+  <script src="https://kit.fontawesome.com/700fbed458.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
@@ -24,10 +25,10 @@
     <p><strong class="fw-bold">When to use:</strong> Organize your notebook into sections (like days, topics, or projects).</p>
     
     <ul class="list-unstyled">
-      <li class="mb-2"><code class="text-danger-emphasis bg-danger-subtle p-1 rounded">#</code> for the notebook title (use once at the top).</li>
-      <li class="mb-2"><code class="text-danger-emphasis bg-danger-subtle p-1 rounded">##</code> for each day or major topic.</li>
-      <li class="mb-2"><code class="text-danger-emphasis bg-danger-subtle p-1 rounded">###</code> for subsections (like "Notes", "Practice", "Reflections").</li>
-    </ul>
+      <li class="mb-2"><code class="text-dark bg-dark-subtle p-1 rounded">#</code> for the notebook title (use once at the top).</li>
+      <li class="mb-2"><code class="text-dark bg-dark-subtle p-1 rounded">##</code> for each day or major topic.</li>
+      <li class="mb-2"><code class="text-dark bg-dark-subtle p-1 rounded">###</code> for subsections (like "Notes", "Practice", "Reflections").</li>
+
     
     <h4 class="display-1 fw-bold text-dark my-4">Example:</h4>
     
@@ -55,7 +56,7 @@
     
     <p><em class="fst-italic">Remember:</em> always test your code</p>
     
-    <p>Use <code class="text-danger-emphasis bg-danger-subtle p-1 rounded">System.out.println()</code> to print</p>
+    <p>Use <code class="text-emphasis bg-subtle p-1 rounded">System.out.println()</code> to print</p>
     
     <h2 class="display-1 fw-bold text-dark my-4">Code Blocks</h2>
     
@@ -67,11 +68,14 @@
     
     <h3 class="display-1 fw-bold text-dark my-4">Example:</h3>
     
-    <pre class="bg-dark text-light p-3 rounded"><code>public class Hello {
+    <pre class="bg-dark text-light p-3 rounded">
+      <button class="copy-code" type="button"><i class="fa-regular fa-clipboard"></i></button>
+      <code>public class Hello {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-    }
-}</code></pre>
+        }
+      }</code>
+    </pre>
     
     <h2 class="display-1 fw-bold text-dark my-4">Lists</h2>
     
@@ -242,5 +246,6 @@
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
