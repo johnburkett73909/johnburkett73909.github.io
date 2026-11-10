@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Disable button briefly to prevent double-clicks during animation
         button.style.pointerEvents = "none";
 
-        // 5. Reset back to original state after 2 seconds
+        // 5. Reset back to original state after two and a half seconds
         setTimeout(() => {
           button.innerHTML = originalHTML;
           button.classList.remove("copied");
           button.style.pointerEvents = "auto";
-        }, 2000);
+        }, 2500);
       } catch (err) {
         console.error("Failed to copy text: ", err);
         button.innerText = "Error";
