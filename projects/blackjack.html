@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Directory</title>
+  <!-- Bootstrap 5 & FontAwesome -->
+  <script src="https://kit.fontawesome.com/700fbed458.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body class="bg-light py-5">
+  <div class="container bg-white p-4 p-md-5 rounded shadow-sm" style="max-width: 850px;">
+
+    <h1 class="h2 fw-bold text-dark mb-4">Projects Directory</h1>
+
+    <h2 class="h2 fw-bold text-dark mt-3">Table of Contents</h2>
+    <div class="list-group list-group-flush border-0 mb-4">
+      <a href="#step-1" class="list-group-item list-group-item-action fw-bold border-0">Step 1: Brainstorm and Planning</a>
+      <a href="#program-ideas" class="list-group-item list-group-item-action ps-4 text-muted border-0">A. Program ideas</a>
+      <a href="#final-decision" class="list-group-item list-group-item-action ps-4 text-muted border-0">B. Final decision: Console Blackjack</a>
+      <a href="#decompose" class="list-group-item list-group-item-action ps-4 text-muted border-0">C. Decompose the project</a>
+    </div>
+
+    <hr class="my-4">
+
+    <h2 class="h2 fw-bold text-dark mb-3" id="step-1">Step 1: Brainstorm & Planning</h2>
+
+    <!-- A. Program ideas -->
+    <div class="container my-4">
+      <h3 class="h3 fw-bold text-dark mb-3" id="program-ideas">A. Program ideas</h3>
+
+      <ol class="list-group list-group-numbered border-0 mb-3">
+        <li class="list-group-item border-0 p-0 ps-1 bg-transparent mb-3">Console Blackjack
+          <ul class="list-unstyled ms-3 mt-1">
+            <li class="mb-1">Inputs: name (String) starting chips (int) bet (int) Stand (String)</li>
+            <li class="mb-1">Decision: bust, win, lose or push based on the total of your hand</li>
+            <li class="mb-1">Class: <code class="text-dark bg-dark-subtle p-1 rounded">Player</code></li>
+          </ul>
+        </li>
+        <li class="list-group-item border-0 p-0 ps-1 bg-transparent mb-3">Vacation Recommender
+          <ul class="list-unstyled ms-3 mt-1">
+            <li class="mb-1">Inputs: name (String) budget per person ( number of travelers (int) climate (String)</li>
+            <li class="mb-1">Decision: make a suggestion of a country based on price and weather.</li>
+            <li class="mb-1">Class: <code class="text-dark bg-dark-subtle p-1 rounded">Trip</code></li>
+          </ul>
+        </li>
+        <li class="list-group-item border-0 p-0 ps-1 bg-transparent mb-3">Study Planner
+          <ul class="list-unstyled ms-3 mt-1">
+            <li class="mb-1">Inputs: name (String) number of hours left before the test (double) number of chapters in the test (int) level of confidence (String)</li>
+            <li class="mb-1">Decision: light timeout by time and confidence</li>
+            <li class="mb-1">Class: <code class="text-dark bg-dark-subtle p-1 rounded">Study Plan</code></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- B. Final decision -->
+    <div class="container my-4">
+      <h3 class="h3 fw-bold text-dark mb-3" id="final-decision">B. Final decision: Console Blackjack</h3>
+
+      <dl>
+        <dt>What is the program going to do?</dt>
+        <dd><p>You can play blackjack against a computer dealer, you choose how many chips to bet, then you hit or stand, the dealer flips over one card, then you hit or stand, the program draws chips, and then it plays itself.</p></dd>
+      </dl>
+
+      <dl>
+        <dt>Who will it attract?</dt>
+        <dd><p>. Classmates, friends or anyone who loves card games and would like to play without any possibility of losing real money.</p></dd>
+      </dl>
+
+      <dl>
+        <dt>What do you want to know?</dt>
+        <dd><p>How is the player called? The number of starting chips the person wants to bet for each round. Stand, continue?</p></dd>
+      </dl>
+
+      <dl>
+        <dt>What decisions will my program make?</dt>
+        <dd>
+          <ul class="list-unstyled mt-2">
+            <li class="mb-2">Was the wager valid ( than 0. No greater than their chips)?</li>
+            <li class="mb-2">Did the player go over 21 (bust)?</li>
+            <li class="mb-2">"Hit (17-=)"? Stand (17+=)?</li>
+            <li class="mb-2">Player, dealer, or tie, who wins?</li>
+          </ul>
+        </dd>
+      </dl>
+
+      <h4 class="h5 fw-bold text-dark my-3">. Types of Data</h4>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>Variable</th>
+              <th>Type</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="text-dark bg-dark-subtle p-1 rounded">name</code></td>
+              <td>String</td>
+              <td>Players name, used in output</td>
+            </tr>
+            <tr>
+              <td><code class="text-dark bg-dark-subtle p-1 rounded">Chips</code></td>
+              <td>int</td>
+              <td>Bankroll which is updated per each round</td>
+            </tr>
+            <tr>
+              <td><code class="text-dark bg-dark-subtle p-1 rounded">bet</code></td>
+              <td>int</td>
+              <td>Amount bet</td>
+            </tr>
+            <tr>
+              <td><code class="text-dark bg-dark-subtle p-1 rounded">playerTotal</code></td>
+              <td>int</td>
+              <td>Updated on each hit of player hand</td>
+            </tr>
+            <tr>
+              <td><code class="text-dark bg-dark-subtle p-1 rounded">dealerTotal</code></td>
+              <td>int</td>
+              <td>Dealers hand</td>
+            </tr>
+            <tr>
+              <td><code class="text-dark bg-dark-subtle p-1 rounded">choice</code></td>
+              <td>String</td>
+              <td>"h" or "s"</td>
+            </tr>
+            <tr>
+              <td><code class="text-dark bg-dark-subtle p-1 rounded">winRate</td>
+              <td>double</td>
+              <td>Wins / Rounds Played</td>
+            </tr>
+            <tr>
+              <td><code class="text-dark bg-dark-subtle p-1 rounded">playing</code></td>
+              <td>boolean</td>
+              <td>Continue the game loop</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <blockquote class="blockquote border-start border-4 ps-3 fs-6">
+        <p>Class other than the Runner, Player with name, chips and hand total and methods to add card, check for a bust win or loose the bet.</p>
+      </blockquote>
+    </div>
+
+    <!-- C. Decompose the project -->
+    <div class="container my-4">
+      <h3 class="h3 fw-bold text-dark mb-3" id="decompose">C. Decompose the project</h3>
+
+      <h4 class="h5 fw-bold text-dark mt-4 mb-3">Beginning</h4>
+      <ul class="list-unstyled">
+        <li class="mb-2">Welcome user: println "Welcome to Console Blackjack! Beat the dealer without going over 21."</li>
+        <li class="mb-2">Show Directions: press print rules Face cards are worth 10 an ace is 11 or 1 the dealer hits until 17 "h" means hit and "s" means stand.</li>
+        <li class="mb-2">Example of setup: prompt, "Please enter your name:" & "How many chips do you want to start with?" and then create the Player object.</li>
+      </ul>
+
+      <h4 class="h5 fw-bold text-dark mt-4 mb-3">Main program</h4>
+      <ul class="list-unstyled">
+        <li class="mb-2">(a) Place a bet: ask "You have X chips. Please enter your bet:". (If the bet is less than 1 or more than their chips, display an error message and Ask again).</li>
+        <li class="mb-2">Dealing: give each player two cards and deal two cards to the dealer. Reveal each player's total and one dealer card.</li>
+        <li class="mb-2">Player turn: ask, "Hit or stand? (h/s)".
+          <br>If h, draw a card and insert it into playerTotal. If the total is over 21, println "Bust!". Finish the game.
+          <br>If s, move on to the dealer.
+        </li>
+        <li class="mb-2">Dealer turn: card is added to the dealerTotal while the value is less than 17.</li>
+        <li class="mb-2">Determine who wins:
+          <br>If the player busted the dealer wins
+          <br>Else if dealer busted player wins
+          <br>Else if &gt; dealerTotal the player wins
+          <br>Else if playerTotal
+          <br>Otherwise it's a push (a tie) and the stake will be refunded
+        </li>
+        <li class="mb-2">Update chips: add the bet on a win subtract it on a loss no change on a push.</li>
+        <li class="mb-2">Class Player: instance variables: name, chips, handTotal class methods: addCard(), isBust(), winBet(), loseBet(), getName(), getChips(), getHandTotal(). All methods should do exactly what you would expect.</li>
+      </ul>
+
+      <h4 class="h5 fw-bold text-dark mt-4 mb-3">Output / end</h4>
+      <ul class="list-unstyled">
+        <li class="mb-2">Feedback: "Alex you win 25 chips! You are at 125."</li>
+        <li class="mb-2">Play again: ask " another round? (y/. ". Stop if the answer is n or the player has 0 chips.</li>
+        <li class="mb-2">Final result: print the chips compared to the original chips rounds won and win rate then a closing message, like "You finished up 40 chips nice job!" the house wins this time.</li>
+      </ul>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
